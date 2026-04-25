@@ -12,8 +12,31 @@
         postContainer.appendChild(postContent);
         postInput.value = "";
 
+        //dummy interact buttons
+        //post interact variables
+        const interactButtons = document.createElement("ul");
+        const upVote = document.createElement("li");
+        const downVote = document.createElement("li");
+        const comment = document.createElement("li");
+        //interact buttons
+        upVote.textContent = ("Up vote");
+        downVote.textContent = ("Down vote");
+        comment.textContent = ("Komentar");
+        //appendchild
+        postContainer.appendChild(interactButtons);
+        interactButtons.appendChild(upVote);
+        interactButtons.appendChild(downVote);
+        interactButtons.appendChild(comment);
+
         if (postContent.textContent === "") {
-            alert("isi bego");
             postList.removeChild(postContainer);
         }
-    })
+    });
+
+    //enter support
+    postInput.addEventListener("keydown", function (e) {
+        if (e.key === "Enter") {
+            postButton.click();
+            event.preventDefault();
+        }
+    });
