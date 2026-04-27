@@ -7,6 +7,11 @@
         postContainer.classList.add("post-container");
         postList.appendChild(postContainer);
 
+        //dummy user
+        const username = document.createElement("h3");
+        username.textContent = "dummy_user";
+        postContainer.appendChild(username);
+
         const postContent = document.createElement("p");
         postContent.textContent = postInput.value.trim();
         postContainer.appendChild(postContent);
@@ -16,17 +21,20 @@
         //post interact variables
         const interactButtons = document.createElement("ul");
         const upVote = document.createElement("li");
-        const downVote = document.createElement("li");
         const comment = document.createElement("li");
+        const share = document.createElement("li");
+        const save = document.createElement("li");
         //interact buttons
-        upVote.textContent = ("Up vote");
-        downVote.textContent = ("Down vote");
-        comment.textContent = ("Komentar");
+        upVote.classList.add("fa-regular", "fa-heart");
+        comment.classList.add("fa-regular", "fa-comment");
+        share.classList.add("fa-regular", "fa-share-from-square");
+        save.classList.add("fa-regular", "fa-bookmark");
         //appendchild
         postContainer.appendChild(interactButtons);
         interactButtons.appendChild(upVote);
-        interactButtons.appendChild(downVote);
         interactButtons.appendChild(comment);
+        interactButtons.appendChild(share);
+        interactButtons.appendChild(save);
 
         if (postContent.textContent === "") {
             postList.removeChild(postContainer);

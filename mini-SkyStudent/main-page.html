@@ -4,42 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkyStudent Forum</title>
+    <link rel="icon" type="image/png" href="images/skystudent2.png">
     <link rel="stylesheet" href="main-page.css">
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <a id="refresh" href="main-page.html">SkyStudent</a>
-                <div class="search-box">
-                    <input id="search-input" type="search" placeholder="Telusuri SkyStudent">
-                    <button id="search-button" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                <div class="profile">
-                    <a href="#"><i class="fa-solid fa-circle-user"></i>Profile</a>
-                </div>
+    <header class="header">
+        <a id="refresh" href="main-page.html">SkyStudent</a>                
+        <div class="search-box">
+                <input id="search-input" type="search" placeholder="Telusuri SkyStudent">
+                <button id="search-button" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="profile">
+            <a href="#"><i class="fa-solid fa-circle-user"></i>Profile</a>                
+        </div>
+    </header>
+    <main class="main">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-shop"></i>Marketplace</a></li>
+                <li><a href="#"><i class="fa-solid fa-heart"></i>Notification</a></li>
+                <li><a href="#"><i class="fa-solid fa-envelope"></i>Admin Support</a></li>
+                <li><a href="#"><i class="fa-solid fa-comments"></i>Tanya Jawab</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Information</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <div class="post-box">
+                <input id="post-input" type="text" placeholder="Buat postinganmu disini">
+                <button id="post-button" type="button">Post</button>
             </div>
-        </header>
-        <main class="main">
-            <aside class="sidebar">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-shop"></i>Marketplace</a></li>
-                    <li><a href="#"><i class="fa-solid fa-heart"></i>Notification</a></li>
-                    <li><a href="#"><i class="fa-solid fa-envelope"></i>Admin Support</a></li>
-                    <li><a href="#"><i class="fa-solid fa-comments"></i>Tanya Jawab</a></li>
-                    <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Information</a></li>
-                </ul>
-                <div id="line">blank</div>
-            </aside>
-            <section class="content">
-                <div class="post-box">
-                    <input id="post-input" type="text" placeholder="Buat postinganmu disini">
-                    <button id="post-button" type="button">Post</button>
-                </div>
-                <div class="post-list"></div>
-                </div>
-            </section>
-        </main>
-    </div>
+            <div class="post-list"></div>
+        </section>
+    </main>
     <script src="https://kit.fontawesome.com/26022b4b84.js" crossorigin="anonymous"></script>
     <script src="main-page.js"></script>
 </body>
