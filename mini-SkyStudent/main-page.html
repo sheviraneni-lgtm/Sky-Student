@@ -8,34 +8,35 @@
     <link rel="stylesheet" href="main-page.css">
 </head>
 <body>
-    <header class="header">
-        <a id="refresh" href="main-page.html">SkyStudent</a>                
-        <div class="search-box">
-                <input id="search-input" type="search" placeholder="Telusuri SkyStudent">
-                <button id="search-button" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="profile">
-            <a href="profile-page.html"><i class="fa-solid fa-circle-user"></i>Profile</a>                
-        </div>
-    </header>
-    <main class="main">
-        <aside class="sidebar">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-shop"></i>Marketplace</a></li>
-                <li><a href="#"><i class="fa-solid fa-heart"></i>Notification</a></li>
-                <li><a href="#"><i class="fa-solid fa-envelope"></i>Admin Support</a></li>
-                <li><a href="#"><i class="fa-solid fa-comments"></i>Tanya Jawab</a></li>
-                <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i>Information</a></li>
-            </ul>
-        </aside>
-        <section class="content">
-            <div class="post-box">
-                <input id="post-input" type="text" placeholder="Buat postinganmu disini">
-                <button id="post-button" type="button">Post</button>
+    <div class="container">
+        <header class="header">
+            <a id="refresh" href="main-page.html">SkyStudent</a>                
+            <div class="search-box">
+                <input type="search" placeholder="Telusuri SkyStudent">
             </div>
-            <div class="post-list"></div>
-        </section>
-    </main>
+            <div class="profile">
+                <a href="profile-page.html"><i class="fa-solid fa-circle-user"></i></a>                
+            </div>
+        </header>
+        <main class="main">
+            <section class="content">
+                <div class="post-box">
+                    <input id="post-input" type="text" placeholder="Buat postinganmu disini">
+                    <button id="post-button" type="button">Post</button>
+                </div>
+                <div class="post-list"></div>
+            </section>
+            <nav class="bottom-menu">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-shop"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-heart"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-comments"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-exclamation"></i></a></li>
+                </ul>
+            </nav>
+        </main>
+    </div class="container">
     <script src="https://kit.fontawesome.com/26022b4b84.js" crossorigin="anonymous"></script>
     <script src="main-page.js"></script>
 </body>
