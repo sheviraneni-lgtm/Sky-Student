@@ -9,7 +9,7 @@ body{
 .header{
     display: flex;
     justify-content: center;
-    gap: 160px;
+    gap: 155px;
     padding: 10px;
     background-image: linear-gradient(to right, #043c56, #89cff0);
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.2);
@@ -127,6 +127,7 @@ main{
 }
 .content .post-container:hover{
     cursor: pointer;
+    background-color: #e6e7eb;
 }
 .content .post-container h3{
     margin: 0;

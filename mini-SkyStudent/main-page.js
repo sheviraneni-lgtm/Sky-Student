@@ -45,6 +45,6 @@
     postInput.addEventListener("keydown", function (e) {
         if (e.key === "Enter") {
             postButton.click();
-            event.preventDefault();
+            e.preventDefault();
         }
     });
